@@ -81,7 +81,7 @@ print(type(build_wheatscopenet(Config())).__name__, 'ready')"
 
  Download the checkpoint from Google Drive:
 
-**https://drive.google.com/file/d/10JGo8v9BQsEw9BeU0fsE0uDcQ2n8CvjF/view?usp=sharing**
+**https://drive.google.com/file/d/1LjyOBzYSg1WKo2wZlU_aTStqfKLU5DBa/view?usp=sharing**
 
 Place it in a `checkpoints/` directory at the repository root:
 
