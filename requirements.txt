@@ -1,0 +1,16 @@
+# WheatScopeNet runtime dependencies (Python 3.10, CUDA 11.8 in the paper's setup).
+torch>=2.0
+torchvision>=0.15
+numpy>=1.24
+Pillow>=9.0
+einops>=0.6
+timm>=0.9
+tqdm>=4.65
+
+# OPTIONAL: mamba-ssm and causal-conv1d provide the fused CUDA selective-scan
+# kernel used by SS2D. They are not required: when they are missing,
+# wheatscopenet.models.ss2d falls back automatically to the pure-PyTorch
+# `selective_scan_reference` implementation (same results, much slower --
+# strongly recommended for training, see the README).
+#   pip install causal-conv1d
+#   pip install mamba-ssm
